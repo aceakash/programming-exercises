@@ -1,1 +1,1 @@
-# sedex-exercises
+# Programming exercises
