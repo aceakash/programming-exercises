@@ -16,3 +16,18 @@ If correct, the program acknowledges that and exits.
 If incorrect, it shows the correct word and exits.
 
 </details>
+
+<details>
+  <summary>Part 2</summary>
+  
+  ## Part 2
+
+Modify the program to allow the user to attempt two different words.
+
+Show them 2 unique scrambled words from your list.
+
+They can unscramble in any order, but one at a time.
+
+After each attempt, let the user know if their answer matched any of the words.
+
+</details>
