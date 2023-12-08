@@ -4,6 +4,7 @@ Do one part at a time. Do not look ahead.
 
 <details>
   <summary>Part 1</summary>
+  
   ## Part 1
 
 Write a command-line program that asks the user to unscramble a 5-letter word.
