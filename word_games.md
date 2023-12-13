@@ -9,7 +9,7 @@ Do one part at a time. Do not look ahead.
 
 Write a command-line program that asks the user to unscramble a 5-letter word.
 
-When the user runs the program (`./word_games`), a scrambled 5-letter word is shown to them. The program then awaits their answer.
+When the user runs the program (`./unscramble`), a scrambled 5-letter word is shown to them. The program then awaits their answer.
 
 If correct, the program acknowledges that and exits.
 
@@ -35,9 +35,7 @@ Modify the program to pick a 5-letter word at random from a word list. You can u
 
 Modify the program to allow the user to attempt two different words.
 
-Show them 2 unique scrambled words from your list.
-
-They can unscramble in any order, but one at a time.
+Show them 2 unique scrambled words from your list, one at a time.
 
 After each attempt, let the user know if their answer matched any of the words.
 
@@ -66,14 +64,46 @@ When the program starts, ask the user to specify the length of each word they wa
   
   ## Part 6
 
-Have the option of reading in the user's preferences (number of words, length of each word) via environment variables
+Have the option of reading in the user's preferences (number of words, length of each word) via command-line args
 
 e.g.
 
 ```
-WORD_COUNT_PER_SESSION=2 WORD_LENGTH=5 ./word_games
+./unscramble --word-count 2 --word-length 5
 ```
 
-If a preference is available via an environment variable, don't prompt the user in-program.
+If a preference is specified via a command-line arg, don't prompt the user in-program.
+
+</details>
+
+<details>
+  <summary>Part 7</summary>
+  
+  ## Part 7
+
+Ask the user if they want a casual or timed session.
+
+If it's a timed session, for every successful solve measure how long it took them, and report it back.
+
+This preference can also be specified via command line arguments,.
+
+```
+./unscramble --mode {casual|timed}
+```
+
+</details>
+
+<details>
+  <summary>Part 8</summary>
+  
+  ## Part 8
+
+It's getting too tedious for users to answer the preference questions everytime.
+
+They would prefer to have defaults that can be overridden.
+
+Change the program so that running it without any command line args uses default values and does not ask any questions of the user in this regard.
+
+Think of the user experience, especially those users who have been used to the questions.
 
 </details>
