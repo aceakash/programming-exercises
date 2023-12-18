@@ -37,7 +37,7 @@ Modify the program to allow the user to attempt two different words.
 
 Show them 2 unique scrambled words from your list, one at a time.
 
-After each attempt, let the user know if their answer matched any of the words.
+After each attempt, let the user know if their answer matched the word.
 
 </details>
 
