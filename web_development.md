@@ -53,17 +53,23 @@ Accept-Language: en-GB
 
 ## Part 5
 
+Change the `echo_headers` endpoint so that if the client supports JSON responses, respond with a JSON response body with the headers as key-value pairs.
+
+Research how an HTTP client indicates what response types it supports.
+
+## Part 6
+
 For the `echo_headers` endpoint, accept a query param `?as_response_headers_with_prefix=X-Echo-`
 
 When this query param is present, there is no response text. Instead, the request headers are echoed back as response headers, but with the given prefix attached to the header name.
 
 e.g. for `?as_response_headers_with_prefix=X-Echo-`, if a header `X-My-Custom-Header: some value` was present in the request, then there should be a header `X-Echo-X-My-Custom-Header: some value` present in the response.
 
-## Part 6
+## Part 7
 
 Change the hello endpoint to remove the path variable and instead read the `Accept-Language` header and respond in the appropriate languages.
 
-## Part 7
+## Part 8
 
 Write a HTTP client for the server implemented above.
 
