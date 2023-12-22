@@ -107,3 +107,23 @@ Change the program so that running it without any command line args uses default
 Think of the user experience, especially those users who have been used to the questions.
 
 </details>
+
+<details>
+  <summary>Part 9</summary>
+  
+  ## Part 9
+
+Users are noticing repeated words across multiple sessions.
+
+Change the program so users are not shown repeated words (unless you run out of words).
+
+</details>
+
+<details>
+  <summary>Part 10</summary>
+  
+  ## Part 10
+
+Users would prefer variable word lengths. Modify the program to use a range for word lengths e.g. 4 to 6 letters, 5 to 9 letters etc.
+
+</details>
