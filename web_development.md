@@ -1,5 +1,9 @@
 # Web development
 
+For each part, you can test the server manually by running the app, and using a browser or HTTP/API client like curl or Postman.
+
+You should also write automated tests for each part. In some technologies (such as http4k), you can test the server in memory without explicitly starting it.
+
 ## Part 1
 
 Write a web server app with a single endpoint `/hello` that returns HTTP 200 and text `Hello`
@@ -18,7 +22,7 @@ Hello Bruce
 
 ## Part 3
 
-Introduce a path variable for language, to respond hello in any supported languages.
+Change the endpoint to introduce a path variable for language, to respond hello in any supported languages.
 
 `/en-US/hello?name=Akash` -> `Hello Akash`
 
@@ -49,13 +53,9 @@ Accept-Language: en-GB
 
 ## Part 5
 
-Change the endpoint `/hello?name=Bruce` (without language path variable) to read the `Accept-Language` header and respond in the appropriate languages. Only support the previously listed languages.
+Change the hello endpoint to remove the path variable and instead read the `Accept-Language` header and respond in the appropriate languages.
 
 ## Part 6
-
-If not done already, write fast, isolated tests for the above functionality.
-
-## Part 7
 
 Write a HTTP client for the server implemented above.
 
