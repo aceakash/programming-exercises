@@ -43,3 +43,13 @@ I want to view a list of all my suppliers
 As an admin at a top level customer org
 
 I want a visual representation of my supply chain
+
+## Technical notes
+
+The interface to this functionality will be a RESTful web API.
+
+Document the API endpoints in a separate markdown file as you develop them.
+
+Create a Github build pipeline to run your tests and build the code on every commit to trunk.
+
+Initially, keep your data in a JSON file.
